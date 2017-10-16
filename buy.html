@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html lang="is">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Verkefni 2</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>Form</h1>
+      <form>
+        <fieldset>
+          <legend>Persónuupplýsingar</legend>
+          <label>
+              Nafn:        
+              <input type="text" name="name" required>
+          </label><br>
+          <label>
+              Kennitala:
+              <input type="number" name="kennitala" required>
+          </label><br>
+          <p>Kyn:</p>
+          <label>
+            <input name="gender" type="radio" value="kvk">
+            Kona
+          </label><br>
+          <label>
+            <input name="gender" type="radio" value="kk">
+            Karl
+          </label><br>
+          <label>
+            <input name="gender" type="radio" value="hk">
+            Annað
+          </label><br>
+          <label>
+            Sími:
+            <input name="phonenumber" type="tel">
+          </label><br>
+          <label>
+            Heimilisfang:
+            <input name="address" type="text">
+          </label><br>
+          <label>
+            <input name="postlist" type="checkbox" checked>
+            Skrá mig á póstlista
+          </label><br>
+            
+        </fieldset>
+        <fieldset>
+          <legend>Greiðsluupplýsingar</legend>
+          <label>
+            Greiða með:
+            <select name="payment_method">
+              <option value="credit">Kreditkorti</option>
+              <option value="transfer">Millifærslu</option>
+              <option value="cash">Reiðufé</option>
+            </select>
+          </label><br>
+          <label>
+            Nafn á korti:
+            <input name="card_name" type="text">
+          </label><br>
+          <label>
+            Kortanúmer:
+            <input name="card_number" type="number">
+          </label><br>
+          <p>Gildistími:</p><br>
+          <label>
+            Mán 
+            <select name="month">
+              <option value="jan">01</option>
+              <option value="feb">02</option>
+              <option value="mar">03</option>
+              <option value="apr">04</option>
+              <option value="may">05</option>
+              <option value="jun">06</option>
+              <option value="jul">07</option>
+              <option value="aug">08</option>
+              <option value="sep">09</option>
+              <option value="oct">10</option>
+              <option value="nov">11</option>
+              <option value="dec">12</option>
+            </select>
+          </label>
+          <label>
+            Ár 
+            <select name="year">
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+            </select>
+          </label>
+        </fieldset>
+        <input type="submit" value="Panta">
+      </form>
+    </main>
+  </body>
+</html>
