@@ -1,8 +1,9 @@
 .header {
-  background: transparent url(bg.jpg) no-repeat fixed 50% 50%;
+  display: flex;
+  background: transparent url(bg.jpg) no-repeat center center fixed;
   background-size: cover;
+  height: $gutter*40;
 }
 
 .header--content {
-  
 }

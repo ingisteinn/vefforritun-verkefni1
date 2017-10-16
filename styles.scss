@@ -19,8 +19,7 @@ html { /* stylelint-disable-line */
   // til þess að texti liggi ekki upp við brún á viewport þegar
   // við erum < 1200px breiðum skjá, setjum margin á báða kanta html
   // ruglar líka ekki í grid overlay
-  margin-right: $gutter;
-  margin-left: $gutter;
+  
 
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -37,8 +36,8 @@ img { /* stylelint-disable-line */
 
 main { /* stylelint-disable-line */
   max-width: $max-width;
-  margin: 0 auto;
-
+  margin-right: $gutter;
+  margin-left: $gutter;
   // þar sem við erum að eiga við neikvæð margin á grid, setjum overflow-x
   // hér sem hidden, þá fáum við ekki lárétta skrunstiku
   overflow-x: hidden;
@@ -47,4 +46,6 @@ main { /* stylelint-disable-line */
 @import "scss/grid";
 @import "scss/buy";
 @import "scss/index";
+@import "scss/button";
+@import "scss/nav";
 
