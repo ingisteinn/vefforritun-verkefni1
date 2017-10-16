@@ -47,3 +47,7 @@ main {
   @media (max-width: 599px) {
     .col-sm-12 {
       width: 100%; } }
+
+.header {
+  background: transparent url(bg.jpg) no-repeat fixed 50% 50%;
+  background-size: cover; }
