@@ -1,14 +1,17 @@
 label{
-    width: 100%
-    //margin-bottom: $gutter;
+    width: 100%;
 }
 
 input{
+    margin-bottom: 20px;    
+}
+
+.text--field{
     width: 100%
     //margin-bottom: $gutter;
 }
 
-select {
+.dropdown {
   width: 100%;
 }
 
@@ -102,4 +105,29 @@ buy--header--content{
     height: 35px;
     margin: auto;
     margin-bottom: 5em;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.monthandyear{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.titleanddrop{
+    display: flex;
+  //  justify-content: space-between;
+}
+
+.dropdown2{
+    width: 50%;
+    margin-left: $gutter;
 }
