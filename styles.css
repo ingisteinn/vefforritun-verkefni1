@@ -164,6 +164,62 @@ buy--header--content {
     animation: fade 1s ease-in forwards;
     animation-delay: 1s; }
 
+.index--main {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 160px; }
+  .index--main--text {
+    width: 50%; }
+  .index--main--img {
+    width: 50%; }
+  .index--main--check {
+    height: 20px; }
+  .index--main--box {
+    display: flex;
+    flex-direction: row; }
+  .index--main--container {
+    display: flex;
+    flex-direction: column; }
+  .index--main--btn {
+    width: 25%; }
+
+.index--bottom {
+  width: 100%; }
+  .index--bottom p {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .index--bottom--btn {
+    display: flex;
+    justify-content: center; }
+
+.review {
+  display: flex;
+  margin-bottom: 80px; }
+  .review--container {
+    width: 33.33333%; }
+  .review--img {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px; }
+    .review--img img {
+      border-radius: 50%; }
+  .review--quote {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px; }
+  .review--name h2 {
+    font-size: 1em;
+    text-align: center; }
+  .review--name p {
+    font-size: 0.75em;
+    text-align: center; }
+  .review--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
 .button {
   display: inline-block;
   max-width: 256px;
