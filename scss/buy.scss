@@ -1,12 +1,24 @@
+label{
+    width: 100%
+    //margin-bottom: $gutter;
+}
+
+input{
+    width: 100%
+    //margin-bottom: $gutter;
+}
+
 .buy--header{
   display: flex;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 100vh;
-  background: transparent url(bg-subpage.jpg) no-repeat center center fixed;
-  background-size: cover;
-  margin-bottom: 160px;   
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 30em;
+    background-image: url(bg-subpage.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    margin-bottom: $gutter*2;
+    opacity: .8;
 }
 
 buy--header--content{
@@ -81,4 +93,5 @@ buy--header--content{
     width: 300px;
     height: 35px;
     margin: auto;
+    margin-bottom: 5em;
 }
