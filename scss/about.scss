@@ -1,20 +1,48 @@
 .about {
-  &--header{
+  &--header {
     display: flex;
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 30em;
-    background-image: url(bg-subpage.jpg);
-    background-attachment: fixed;
-    background-size: contain;
-    margin-bottom: $gutter*8;
+    height: 50vh;
+    background: url(bg-subpage.jpg) no-repeat 100% 100% fixed;
+    background-size: cover;
+    margin-bottom: $gutter*3;
+    opacity: 0, 5;
+
+    &--content {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--title {
+      font-size: 3em;
+      font-weight: 700;
+      opacity: 0;
+      color: white;
+    }
   }
-  
-  &--title {
-    font-size: 3em;
-    font-weight: 700;
-    opacity: 0;
-    color: white;
+  &--text {
+
+    p {
+      margin-bottom: $gutter;
+      margin-top: $gutter;
+
+    }
+    blockquote {
+      font-size: 1.5em;
+      font-style: italic;
+      float: right;
+      margin-left: &gutter;
+      word-break: break-word;
+      width: 50%;
+      p {
+        font-size: 0, 5em
+      }
+    }
   }
+
+
+
 }
