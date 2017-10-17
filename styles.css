@@ -54,6 +54,9 @@ label {
 input {
   width: 100%; }
 
+select {
+  width: 100%; }
+
 .buy--header {
   display: flex;
   align-items: center;
@@ -81,6 +84,9 @@ buy--header--content {
   font-size: 1.5em; }
 
 .buy--div {
+  width: 100%; }
+
+.div--container {
   width: 33.33333%; }
 
 .fieldset--container {

@@ -8,6 +8,10 @@ input{
     //margin-bottom: $gutter;
 }
 
+select {
+  width: 100%;
+}
+
 .buy--header{
   display: flex;
     align-items: center;
@@ -40,7 +44,11 @@ buy--header--content{
 }
 
 .buy--div{
-     @include columns(4);
+     width: 100%;
+}
+
+.div--container {
+  @include columns(4);
 }
 
 .fieldset--container{
