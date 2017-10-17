@@ -219,9 +219,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media (max-width: 600px) {
   .index--main {
-    flex-direction: column;
+    margin-right: 20px;
     margin-left: 20px;
-    margin-right: 20px; } }
+    flex-direction: column; } }
 
 .index--bottom {
   width: 100%; }

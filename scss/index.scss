@@ -80,7 +80,7 @@
     &--container {
       display: flex;
       flex-direction: column;
-      
+
       &--text {
         margin-bottom: $gutter;
       }
@@ -94,19 +94,19 @@
       &--img {
         @include columns(12);
       }
-      
+
       &--text {
         @include columns(12);
         margin-bottom: $gutter*2;
       }
     }
   }
-  
+
   @media (max-width: 600px) {
     &--main {
-      flex-direction: column;
-      margin-left: $gutter;
       margin-right: $gutter;
+      margin-left: $gutter;
+      flex-direction: column;
     }
   }
 
@@ -176,7 +176,7 @@
       @include columns(6);
     }
   }
-  
+
   @media (max-width: 400px) {
     &--container {
       @include columns(12);
