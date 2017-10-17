@@ -51,13 +51,17 @@
     
     &--text {
       @include columns(6);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
     }
     
     &--img {
       @include columns(6);
     }
     &--check {
-      height: $gutter;
+      height: 2em;
+      margin-right: $gutter/2;
     }
     &--box {
       display: flex;
@@ -77,6 +81,7 @@
     & p {
       text-align: center;
       font-weight: bold;
+      font-family: 'Roboto Slab', serif;
       margin-bottom: $gutter/2;
     }
     &--btn {

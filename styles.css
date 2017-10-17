@@ -190,11 +190,15 @@ input[type=number]::-webkit-outer-spin-button {
   flex-direction: row;
   margin-bottom: 160px; }
   .index--main--text {
-    width: 50%; }
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
   .index--main--img {
     width: 50%; }
   .index--main--check {
-    height: 20px; }
+    height: 2em;
+    margin-right: 10px; }
   .index--main--box {
     display: flex;
     flex-direction: row; }
@@ -209,6 +213,7 @@ input[type=number]::-webkit-outer-spin-button {
   .index--bottom p {
     text-align: center;
     font-weight: bold;
+    font-family: 'Roboto Slab', serif;
     margin-bottom: 10px; }
   .index--bottom--btn {
     display: flex;
