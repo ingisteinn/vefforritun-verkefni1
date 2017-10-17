@@ -31,11 +31,11 @@
           <legend class="buy--legend">Persónuupplýsingar</legend>
           <label>
               Nafn: <br>        
-              <input type="text" name="name" required>
+              <input type="text" name="name" class="text--field" required>
           </label><br>
           <label>
               Kennitala: <br>
-              <input type="number" name="kennitala" placeholder="123456-7890" pattern="[0-9]{6}+\-[0-9]{4}" required>
+              <input type="number" name="kennitala" class="text--field" placeholder="123456-7890" pattern="[0-9]{6}+\-[0-9]{4}" required>
           </label><br>
           <p>Kyn:</p>
           <label>
@@ -52,11 +52,11 @@
           </label><br>
           <label>
             Sími: <br>
-            <input name="phonenumber" type="tel" placeholder="+354 812 3456" pattern="+354+">
+            <input name="phonenumber" type="tel" class="text--field" placeholder="+354 812 3456" pattern="+354+">
           </label><br>
           <label>
             Heimilisfang: <br>
-            <input name="address" type="text">
+            <input name="address" type="text" class="text--field">
           </label><br>
           <label>
             <input name="postlist" type="checkbox" checked>
@@ -69,7 +69,7 @@
           <legend class="buy--legend">Greiðsluupplýsingar</legend>
           <label>
             Greiða með: <br>
-            <select name="payment_method">
+            <select name="payment_method" class="dropdown">
               <option value="credit">Kreditkorti</option>
               <option value="transfer">Millifærslu</option>
               <option value="cash">Reiðufé</option>
@@ -77,16 +77,17 @@
           </label><br>
           <label>
             Nafn á korti: <br>
-            <input name="card_name" type="text">
+            <input name="card_name" type="text" class="text--field">
           </label><br>
           <label>
             Kortanúmer: <br>
-            <input name="card_number" type="number" placeholder="5999-9999-9999-9999" pattern="[0-9]{4}+\-[0-9]{4}+\-[0-9]{4}+\-[0-9]{4}>">
+            <input name="card_number" type="number" placeholder="5999-9999-9999-9999" class="text--field" pattern="[0-9]{4}+\-[0-9]{4}+\-[0-9]{4}+\-[0-9]{4}>">
           </label><br>
-          <p>Gildistími:</p><br>
-          <label>
+          <p>Gildistími:</p>
+          <div class="monthandyear">
+          <label class="titleanddrop">
             Mán 
-            <select name="month">
+            <select name="month" class="dropdown2">
               <option value="jan">01</option>
               <option value="feb">02</option>
               <option value="mar">03</option>
@@ -101,15 +102,16 @@
               <option value="dec">12</option>
             </select>
           </label>
-          <label>
+          <label class="titleanddrop">
             Ár 
-            <select name="year">
+            <select name="year" class="dropdown2">
               <option value="2017">2017</option>
               <option value="2018">2018</option>
               <option value="2019">2019</option>
               <option value="2020">2020</option>
             </select>
           </label>
+              </div>
         </div>
               </div>
             </div>
@@ -118,5 +120,21 @@
           </div>
       </form>
     </main>
+    <footer class="footer">
+        <div class="footer--upper">
+        <div class="footer--item">
+          <p>Fooþjónustan</p>
+          <p>123-4567</p>
+        </div>
+        <div class="footer--item">
+          <p>Opið 12-13 alla daga</p>
+          <p>Bargata 1</p>
+          <p>900 Foobar</p>
+        </div>
+        </div>
+      <div class="footer--below">
+          <p>©Fooþjónustan 2017</p>
+      </div>  
+    </footer>  
   </body>
 </html>
