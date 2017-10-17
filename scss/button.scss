@@ -1,25 +1,17 @@
 .button {
   display: inline-block;
-
-  max-width: 256px;
-  padding: 5px 5px;
-
+  max-width: 16em;
+  padding: 0.3125em;
   overflow: hidden;
-
-  
   color: #eee;
   text-align: center;
   text-decoration: none;
   text-overflow: ellipsis;
   white-space: nowrap;
-
   cursor: pointer;
-
   background-color: #666;
-
   border: 1px solid #666;
   border-radius: 4px;
-
   transition: background-color 500ms ease, color 500ms ease;
 
   &:hover {

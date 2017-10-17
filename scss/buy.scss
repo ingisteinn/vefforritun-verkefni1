@@ -1,79 +1,75 @@
-label{
-    width: 100%;
+label {
+  width: 100%;
 }
 
-input{
-    margin-bottom: 20px;    
+input {
+  margin-bottom: 20px;
 }
 
-.text--field{
-    width: 100%
-    //margin-bottom: $gutter;
+.text--field {
+  width: 100% //margin-bottom: $gutter;
 }
 
 .dropdown {
   width: 100%;
 }
 
-.buy--header{
+.buy--header {
   display: flex;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 30em;
-    background-image: url(bg-subpage.jpg);
-    background-attachment: fixed;
-    background-size: contain;
-    margin-bottom: $gutter*2;
-    opacity: .8;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 30em;
+  background-image: url(bg-subpage.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+  margin-bottom: $gutter*2;
+  opacity: .8;
 }
 
-buy--header--content{
-    margin: auto;
-    display: flex;
-    flex-direction: column; 
+buy--header--content {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.buy--header--title{
-     font-size: 3em;
-    font-weight: 700;
-   
-    color: white;
+.buy--header--title {
+  font-size: 3em;
+  font-weight: 700;
+  color: white;
 }
 
-.buy--legend{
-   font-family: 'Roboto Slab', serif;
-    font-size: 1.5em;
+.buy--legend {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em;
 }
 
-.buy--div{
-     width: 100%;
+.buy--div {
+  width: 100%;
 }
 
 .div--container {
   @include columns(4);
 }
 
-.fieldset--container{
-    //display: flex;
-    //flex-direction: row;
-    //justify-content: space-around;
+.fieldset--container {
+  //display: flex;
+  //flex-direction: row;
+  //justify-content: space-around;
   @include columns(6);
 }
 
-.form--box{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.form--box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.order--button{
+.order--button {
   display: inline-block;
   max-width: 256px;
   padding: 5px 5px;
-
   overflow: hidden;
-
   margin-top: 20px;
   color: #eee;
   text-align: center;
@@ -82,52 +78,46 @@ buy--header--content{
   white-space: nowrap;
   width: 300px;
   height: 35px;
-
   cursor: pointer;
-
   background-color: #666;
-
   border: 1px solid #666;
   border-radius: 4px;
-
   transition: background-color 500ms ease, color 500ms ease;
-
   &:hover {
     color: #eee;
     background-color: #333;
   }
 }
 
-.order--box{
-   // display:flex
-    //justify-content: center;
-    width: 300px;
-    height: 35px;
-    margin: auto;
-    margin-bottom: 5em;
+.order--box {
+  // display:flex
+  //justify-content: center;
+  width: 300px;
+  height: 35px;
+  margin: auto;
+  margin-bottom: 5em;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
-.monthandyear{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    
+.monthandyear {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.titleanddrop{
-    display: flex;
+.titleanddrop {
+  display: flex;
   //  justify-content: space-between;
 }
 
-.dropdown2{
-    width: 50%;
-    margin-left: $gutter;
+.dropdown2 {
+  width: 50%;
+  margin-left: $gutter;
 }

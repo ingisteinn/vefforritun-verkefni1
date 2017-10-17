@@ -13,7 +13,7 @@ html {
 
 html {
   /* stylelint-disable-line */
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5; }
   @media (min-width: 1200px) {
@@ -29,7 +29,8 @@ main {
   overflow-x: hidden; }
 
 h1 {
-  font-family: 'Roboto Slab', serif; }
+  /* stylelint-disable-line */
+  font-family: "Roboto Slab", serif; }
 
 .row {
   display: flex;
@@ -155,21 +156,21 @@ input[type=number]::-webkit-outer-spin-button {
 .index--header {
   display: flex;
   align-items: center;
-  text-align: center;
   width: 100%;
   height: 100vh;
-  background: transparent url(bg.jpg) no-repeat center center fixed;
-  background-size: cover;
-  margin-bottom: 160px; }
+  margin-bottom: 160px;
+  text-align: center;
+  background: transparent url("bg.jpg") no-repeat center center fixed;
+  background-size: cover; }
   .index--header--content {
-    margin: auto;
     display: flex;
+    margin: auto;
     flex-direction: column; }
   .index--header--btn {
+    width: 5em;
     margin: auto;
     margin-top: 40px;
     font-size: 1.5em;
-    width: 5em;
     opacity: 0;
     animation: fade 1s ease-in forwards;
     animation-delay: 3s; }
@@ -187,8 +188,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .index--main {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 160px; }
+  margin-bottom: 160px;
+  flex-direction: row; }
   .index--main--text {
     width: 50%;
     display: flex;
@@ -210,11 +211,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 .index--bottom {
   width: 100%; }
-  .index--bottom p {
-    text-align: center;
+  .index--bottom--p {
+    margin-bottom: 10px;
+    font-family: "Roboto Slab", serif;
     font-weight: bold;
-    font-family: 'Roboto Slab', serif;
-    margin-bottom: 10px; }
+    text-align: center; }
   .index--bottom--btn {
     display: flex;
     justify-content: center;
@@ -229,28 +230,28 @@ input[type=number]::-webkit-outer-spin-button {
     width: 80%;
     margin: auto;
     margin-bottom: 10px; }
-    .review--img img {
-      border-radius: 50%; }
+  .review--image {
+    border-radius: 50%; }
   .review--quote {
+    margin-bottom: 10px;
     font-style: italic;
     font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px; }
-  .review--name h2 {
-    font-size: 1em;
-    text-align: center; }
-  .review--name p {
-    font-size: 0.75em;
     text-align: center; }
   .review--text {
     display: flex;
     flex-direction: column;
     justify-content: center; }
+  .review--p {
+    font-size: 0.75em;
+    text-align: center; }
+  .review--h2 {
+    font-size: 1em;
+    text-align: center; }
 
 .button {
   display: inline-block;
-  max-width: 256px;
-  padding: 5px 5px;
+  max-width: 16em;
+  padding: 0.3125em;
   overflow: hidden;
   color: #eee;
   text-align: center;
@@ -267,38 +268,37 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: #333; }
 
 .nav {
-  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
+  display: flex;
   width: 100%;
   height: 3em;
-  display: flex;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
   align-items: center;
-  justify-content: space-between;
-  padding: 20px; }
+  justify-content: space-between; }
   .nav--home {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.5em;
-    font-weight: bold;
     left: 1em;
-    display: flex; }
+    display: flex;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.5em;
+    font-weight: bold; }
   .nav--about {
-    font-size: 1em;
-    margin-right: 20px; }
+    margin-right: 20px;
+    font-size: 1em; }
   .nav--buy {
-    font-size: 1em;
-    width: 4em; }
+    width: 4em;
+    font-size: 1em; }
   .nav--index {
     display: flex;
     align-items: center; }
   .nav--container {
-    float: right;
     display: flex;
+    float: right;
     flex-direction: row;
     align-items: center; }
-
-.nav a {
-  color: white;
-  text-decoration: none; }
+  .nav--a {
+    color: #fff;
+    text-decoration: none; }
 
 .about--header {
   display: flex;
@@ -345,19 +345,19 @@ input[type=number]::-webkit-outer-spin-button {
   padding-bottom: 20px; }
 
 .footer p {
-  color: white;
-  font-size: 1em; }
+  font-size: 1em;
+  color: #fff; }
 
 .footer--item {
   text-align: center;
   width: 25%; }
 
 .footer--below {
+  display: flex;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 0.8em;
-  display: flex;
-  width: 100%;
   justify-content: space-around;
   border-top: 1px solid rgba(255, 255, 255, 0.5); }
 

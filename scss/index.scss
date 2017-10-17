@@ -1,34 +1,40 @@
 @keyframes fade {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .index {
   &--header {
     display: flex;
     align-items: center;
-    text-align: center;
     width: 100%;
     height: 100vh;
-    background: transparent url(bg.jpg) no-repeat center center fixed;
-    background-size: cover;
     margin-bottom: $gutter*8;
+    text-align: center;
+    background: transparent url("bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+
     &--content {
-      margin: auto;
       display: flex;
+      margin: auto;
       flex-direction: column;
     }
-    
+
     &--btn {
+      width: 5em;
       margin: auto;
       margin-top: $gutter*2;
       font-size: 1.5em;
-      width: 5em;
       opacity: 0;
       animation: fade 1s ease-in forwards;
       animation-delay: 3s;
     }
-    
+
     &--title {
       font-size: 3em;
       font-weight: 700;
@@ -36,7 +42,7 @@
       animation: fade 1s ease-in forwards;
       animation-delay: 2s;
     }
-    
+
     &--text {
       font-size: 1.5em;
       opacity: 0;
@@ -44,46 +50,53 @@
       animation-delay: 1s;
     }
   }
+
   &--main {
     display: flex;
-    flex-direction: row;
     margin-bottom: $gutter*8;
-    
+    flex-direction: row;
+
     &--text {
       @include columns(6);
       display: flex;
       flex-direction: column;
       justify-content: space-around;
     }
-    
+
     &--img {
       @include columns(6);
     }
+
     &--check {
       height: 2em;
       margin-right: $gutter/2;
     }
+
     &--box {
       display: flex;
       flex-direction: row;
     }
+
     &--container {
       display: flex;
       flex-direction: column;
     }
+
     &--btn {
       @include columns(3);
     }
   }
-  
+
   &--bottom {
     width: 100%;
-    & p {
-      text-align: center;
-      font-weight: bold;
-      font-family: 'Roboto Slab', serif;
+
+    &--p {
       margin-bottom: $gutter/2;
+      font-family: "Roboto Slab", serif;
+      font-weight: bold;
+      text-align: center;
     }
+
     &--btn {
       display: flex;
       justify-content: center;
@@ -95,37 +108,41 @@
 .review {
   display: flex;
   margin-bottom: $gutter*4;
-  
+
   &--container {
     @include columns(4);
   }
+
   &--img {
     width: 80%;
     margin: auto;
     margin-bottom: $gutter/2;
-    & img {
-      border-radius: 50%;
-    }
   }
+
+  &--image {
+    border-radius: 50%;
+  }
+
   &--quote {
+    margin-bottom: $gutter/2;
     font-style: italic;
     font-weight: bold;
     text-align: center;
-    margin-bottom: $gutter/2;
   }
-  &--name {
-    & h2 {
-      font-size: 1em;
-      text-align: center;
-    }
-    & p {
-      font-size: 0.75em;
-      text-align: center;
-    }
-  }
+
   &--text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  &--p {
+    font-size: 0.75em;
+    text-align: center;
+  }
+
+  &--h2 {
+    font-size: 1em;
+    text-align: center;
   }
 }

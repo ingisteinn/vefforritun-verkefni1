@@ -1,29 +1,29 @@
 .nav {
-  background-color: rgba(0,0,0,0.8);
   position: fixed;
+  display: flex;
   width: 100%;
   height: 3em;
-  display: flex;
+  padding: $gutter;
+  background-color: rgba(0, 0, 0, 0.8);
   align-items: center;
   justify-content: space-between;
-  padding: $gutter;
-  
+
   &--home {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.5em;
-    font-weight: bold;
     left: 1em;
     display: flex;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.5em;
+    font-weight: bold;
   }
 
   &--about {
-    font-size: 1em;
     margin-right: $gutter;
+    font-size: 1em;
   }
 
   &--buy {
-    font-size: 1em;
     width: 4em;
+    font-size: 1em;
   }
 
   &--index {
@@ -32,17 +32,14 @@
   }
 
   &--container {
-    float: right;
     display: flex;
+    float: right;
     flex-direction: row;
     align-items: center;
   }
+
+  &--a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
-
-.nav a {
-  color: white;
-  text-decoration: none;
-}
-
-
-

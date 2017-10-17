@@ -9,13 +9,11 @@
     background-size: cover;
     margin-bottom: $gutter*3;
     opacity: 0, 5;
-
     &--content {
       margin: auto;
       display: flex;
       flex-direction: column;
     }
-
     &--title {
       font-size: 3em;
       font-weight: 700;
@@ -24,11 +22,9 @@
     }
   }
   &--text {
-
     p {
       margin-bottom: $gutter;
       margin-top: $gutter;
-
     }
     blockquote {
       font-size: 1.5em;
@@ -42,7 +38,4 @@
       }
     }
   }
-
-
-
 }
