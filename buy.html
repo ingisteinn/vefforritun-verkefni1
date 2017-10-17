@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="is">
+<html lang="is" class="grid">
 
   <head>
     <meta charset="utf-8">
@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
   </head>
-
   <body>
     <main>
       <nav class="nav">
@@ -20,17 +19,23 @@
           <a href="buy.html" class="button nav--buy">Kaupa</a>
         </div>
       </nav>
-      <h1>Form</h1>
-      <form>
-        <fieldset>
-          <legend>Persónuupplýsingar</legend>
+      <header class="buy--header">
+      <div class="buy--header--content">
+        <h1 class="buy--header--title">Kaupa</h1>
+      </div>
+      </header>
+      <form class>
+        <div class="form--box">
+        <div class="div--container">
+        <div class="buy--div">
+          <legend class="buy--legend">Persónuupplýsingar</legend>
           <label>
-              Nafn:        
+              Nafn: <br>        
               <input type="text" name="name" required>
           </label><br>
           <label>
-              Kennitala:
-              <input type="number" name="kennitala" required>
+              Kennitala: <br>
+              <input type="number" name="kennitala" placeholder="123456-7890" pattern="[0-9]{6}+\-[0-9]{4}" required>
           </label><br>
           <p>Kyn:</p>
           <label>
@@ -46,23 +51,24 @@
             Annað
           </label><br>
           <label>
-            Sími:
-            <input name="phonenumber" type="tel">
+            Sími: <br>
+            <input name="phonenumber" type="tel" placeholder="+354 812 3456" pattern="+354+">
           </label><br>
           <label>
-            Heimilisfang:
+            Heimilisfang: <br>
             <input name="address" type="text">
           </label><br>
           <label>
             <input name="postlist" type="checkbox" checked>
             Skrá mig á póstlista
-          </label><br>
-            
-        </fieldset>
-        <fieldset>
-          <legend>Greiðsluupplýsingar</legend>
+          </label><br>   
+        </div>
+        </div>
+        <div class="div--container">
+        <div class="buy--div">
+          <legend class="buy--legend">Greiðsluupplýsingar</legend>
           <label>
-            Greiða með:
+            Greiða með: <br>
             <select name="payment_method">
               <option value="credit">Kreditkorti</option>
               <option value="transfer">Millifærslu</option>
@@ -70,12 +76,12 @@
             </select>
           </label><br>
           <label>
-            Nafn á korti:
+            Nafn á korti: <br>
             <input name="card_name" type="text">
           </label><br>
           <label>
-            Kortanúmer:
-            <input name="card_number" type="number">
+            Kortanúmer: <br>
+            <input name="card_number" type="number" placeholder="5999-9999-9999-9999" pattern="[0-9]{4}+\-[0-9]{4}+\-[0-9]{4}+\-[0-9]{4}>">
           </label><br>
           <p>Gildistími:</p><br>
           <label>
@@ -104,8 +110,12 @@
               <option value="2020">2020</option>
             </select>
           </label>
-        </fieldset>
-        <input type="submit" value="Panta">
+        </div>
+              </div>
+            </div>
+          <div class="order--box">
+            <input type="submit" value="Panta" class="order--button">
+          </div>
       </form>
     </main>
   </body>

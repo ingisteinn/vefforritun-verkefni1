@@ -50,6 +50,68 @@ h1 {
     .col-sm-12 {
       width: 100%; } }
 
+.buy--header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: transparent url(bg-subpage.jpg) no-repeat center center fixed;
+  background-size: cover;
+  margin-bottom: 160px; }
+
+buy--header--content {
+  margin: auto;
+  display: flex;
+  flex-direction: column; }
+
+.buy--header--title {
+  font-size: 3em;
+  font-weight: 700;
+  color: white; }
+
+.buy--legend {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em; }
+
+.buy--div {
+  width: 33.33333%; }
+
+.fieldset--container {
+  width: 50%; }
+
+.form--box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.order--button {
+  display: inline-block;
+  max-width: 256px;
+  padding: 5px 5px;
+  overflow: hidden;
+  margin-top: 20px;
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 300px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 4px;
+  transition: background-color 500ms ease, color 500ms ease; }
+  .order--button:hover {
+    color: #eee;
+    background-color: #333; }
+
+.order--box {
+  width: 300px;
+  height: 35px;
+  margin: auto; }
+
 @keyframes fade {
   from {
     opacity: 0; }
