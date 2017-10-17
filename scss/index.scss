@@ -1,3 +1,8 @@
+@keyframes fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 .index {
   &--header {
     display: flex;
@@ -19,15 +24,24 @@
       margin-top: $gutter*2;
       font-size: 1.5em;
       width: 5em;
+      opacity: 0;
+      animation: fade 1s ease-in forwards;
+      animation-delay: 3s;
     }
     
     &--title {
       font-size: 3em;
       font-weight: 700;
+      opacity: 0;
+      animation: fade 1s ease-in forwards;
+      animation-delay: 2s;
     }
     
     &--text {
       font-size: 1.5em;
+      opacity: 0;
+      animation: fade 1s ease-in forwards;
+      animation-delay: 1s;
     }
   }
 }

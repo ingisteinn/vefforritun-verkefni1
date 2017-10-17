@@ -50,6 +50,12 @@ h1 {
     .col-sm-12 {
       width: 100%; } }
 
+@keyframes fade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .index--header {
   display: flex;
   align-items: center;
@@ -67,12 +73,21 @@ h1 {
     margin: auto;
     margin-top: 40px;
     font-size: 1.5em;
-    width: 5em; }
+    width: 5em;
+    opacity: 0;
+    animation: fade 1s ease-in forwards;
+    animation-delay: 3s; }
   .index--header--title {
     font-size: 3em;
-    font-weight: 700; }
+    font-weight: 700;
+    opacity: 0;
+    animation: fade 1s ease-in forwards;
+    animation-delay: 2s; }
   .index--header--text {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    opacity: 0;
+    animation: fade 1s ease-in forwards;
+    animation-delay: 1s; }
 
 .button {
   display: inline-block;
