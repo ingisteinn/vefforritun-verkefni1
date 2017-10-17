@@ -47,7 +47,7 @@ main {
     .col-sm-12 {
       width: 100%; } }
 
-.header {
+.index--header {
   display: flex;
   background: transparent url(bg.jpg) no-repeat center center fixed;
   background-size: cover;
