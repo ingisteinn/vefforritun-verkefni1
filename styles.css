@@ -206,8 +206,22 @@ input[type=number]::-webkit-outer-spin-button {
   .index--main--container {
     display: flex;
     flex-direction: column; }
+    .index--main--container--text {
+      margin-bottom: 20px; }
   .index--main--btn {
     width: 25%; }
+  @media (max-width: 600px) {
+    .index--main--img {
+      width: 100%; }
+    .index--main--text {
+      width: 100%;
+      margin-bottom: 40px; } }
+
+@media (max-width: 600px) {
+  .index--main {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px; } }
 
 .index--bottom {
   width: 100%; }
@@ -223,8 +237,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .review {
   display: flex;
-  margin-bottom: 80px; }
+  justify-content: center;
+  flex-wrap: wrap; }
   .review--container {
+    margin-bottom: 80px;
     width: 33.33333%; }
   .review--img {
     width: 80%;
@@ -247,6 +263,12 @@ input[type=number]::-webkit-outer-spin-button {
   .review--h2 {
     font-size: 1em;
     text-align: center; }
+  @media (max-width: 600px) {
+    .review--container {
+      width: 50%; } }
+  @media (max-width: 400px) {
+    .review--container {
+      width: 100%; } }
 
 .button {
   display: inline-block;

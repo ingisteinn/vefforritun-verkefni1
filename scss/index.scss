@@ -80,10 +80,33 @@
     &--container {
       display: flex;
       flex-direction: column;
+      
+      &--text {
+        margin-bottom: $gutter;
+      }
     }
 
     &--btn {
       @include columns(3);
+    }
+
+    @media (max-width: 600px) {
+      &--img {
+        @include columns(12);
+      }
+      
+      &--text {
+        @include columns(12);
+        margin-bottom: $gutter*2;
+      }
+    }
+  }
+  
+  @media (max-width: 600px) {
+    &--main {
+      flex-direction: column;
+      margin-left: $gutter;
+      margin-right: $gutter;
     }
   }
 
@@ -107,9 +130,11 @@
 
 .review {
   display: flex;
-  margin-bottom: $gutter*4;
+  justify-content: center;
+  flex-wrap: wrap;
 
   &--container {
+    margin-bottom: $gutter*4;
     @include columns(4);
   }
 
@@ -144,5 +169,17 @@
   &--h2 {
     font-size: 1em;
     text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    &--container {
+      @include columns(6);
+    }
+  }
+  
+  @media (max-width: 400px) {
+    &--container {
+      @include columns(12);
+    }
   }
 }
