@@ -43,6 +43,10 @@ main { /* stylelint-disable-line */
   overflow-x: hidden;
 }
 
+h1 {
+  font-family: 'Roboto Slab', serif;
+}
+
 @import "scss/grid";
 @import "scss/buy";
 @import "scss/index";

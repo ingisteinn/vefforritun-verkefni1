@@ -7,40 +7,42 @@
   align-items: center;
   justify-content: space-between;
   padding: $gutter;
+  
+  &--home {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    left: 1em;
+    display: flex;
+  }
+
+  &--about {
+    font-size: 1em;
+    margin-right: $gutter;
+  }
+
+  &--buy {
+    font-size: 1em;
+    width: 4em;
+  }
+
+  &--index {
+    display: flex;
+    align-items: center;
+  }
+
+  &--container {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .nav a {
   color: white;
   text-decoration: none;
-  }
-
-.nav--home{
-  font-family: 'Roboto Slab';
-  font-size: 1.5em;
-  font-weight: bold;
-  left: 1em;
-  display: flex;
 }
 
-.nav--about{
-  font-size: 1em;
-  margin-right: $gutter;
-}
 
-.nav--buy{
-  font-size: 1em;
-  width: 5em;
-}
-
-.nav--index {
-  display: flex;
-  align-items: center;
-}
-
-.nav--container {
-  float: right;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 

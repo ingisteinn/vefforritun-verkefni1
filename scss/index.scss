@@ -1,9 +1,34 @@
-.index--header {
-  display: flex;
-  background: transparent url(bg.jpg) no-repeat center center fixed;
-  background-size: cover;
-  height: $gutter*40;
+.index {
+  &--header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: transparent url(bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin-bottom: $gutter*8;
+    &--content {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    &--btn {
+      margin: auto;
+      margin-top: $gutter*2;
+      font-size: 1.5em;
+      width: 5em;
+    }
+    
+    &--title {
+      font-size: 3em;
+      font-weight: 700;
+    }
+    
+    &--text {
+      font-size: 1.5em;
+    }
+  }
 }
 
-.header--content {
-}
