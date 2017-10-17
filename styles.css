@@ -27,8 +27,6 @@ img {
 main {
   /* stylelint-disable-line */
   max-width: 1200px;
-  margin-right: 20px;
-  margin-left: 20px;
   overflow-x: hidden; }
 
 h1 {
