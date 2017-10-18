@@ -4,12 +4,15 @@
   height: 50vh;
   margin-bottom: $gutter*3;
   align-items: center;
+  font-size: 1.5em;
   text-align: center;
+  word-break: break-all;
   background: url("bg-subpage.jpg") no-repeat center;
   background-size: cover;
   opacity: 0.8;
 
   &--text {
+    padding-right: $gutter;
     padding-left: $gutter;
     color: #fff;
   }

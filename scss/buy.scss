@@ -22,20 +22,14 @@
 }
 
 .buy--legend {
+  margin-bottom: $gutter;
   font-family: "Roboto Slab", serif;
   font-size: 1.5em;
 }
 
-.buy--div {
-  width: 100%;
-}
-
 .div--container {
   @include columns(4);
-}
-
-.fieldset--container {
-  @include columns(6);
+  margin: $gutter;
 }
 
 .form--box {
@@ -45,44 +39,40 @@
 }
 
 .order--button {
-  display: inline-block;
-  width: 300px;
-  max-width: 256px;
+  width: 100%;
   height: 35px;
-  padding: 5px;
-  margin-top: $gutter;
-  overflow: hidden;
-  color: #eee;
-  text-align: center;
-  text-decoration: none;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-  background-color: #666;
-  border: 1px solid #666;
-  border-radius: 4px;
-  transition: background-color 500ms ease, color 500ms ease;
-
-  &:hover {
-    color: #eee;
-    background-color: #333;
-  }
 }
 
 .order--box {
-  width: $gutter*15;
-  height: 35px;
+  width: 12em;
   margin: auto;
-  margin-bottom: 5em;
+  margin-top: $gutter;
+  margin-bottom: $gutter*4;
 }
 
 .monthyear--container {
   display: flex;
-  justify-content: space-between;
   width: 100%;
 }
 
 .monthyear--item {
   display: flex;
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  .div--container {
+    @include columns(6);
+  }
+}
+
+@media (max-width: 400px) {
+  .form--box {
+    flex-direction: column;
+  }
+
+  .div--container {
+    width: calc(100% - 2.5em);
+    margin: $gutter;
+  }
 }

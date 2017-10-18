@@ -87,7 +87,7 @@
     }
 
     &--btn {
-      @include columns(3);
+      width: 8em;
     }
 
     @media (max-width: 600px) {
@@ -172,6 +172,8 @@
   }
 
   @media (max-width: 600px) {
+    margin: $gutter;
+
     &--container {
       @include columns(6);
     }

@@ -86,17 +86,13 @@ h1 {
   margin-bottom: 20px; }
 
 .buy--legend {
+  margin-bottom: 20px;
   font-family: "Roboto Slab", serif;
   font-size: 1.5em; }
 
-.buy--div {
-  width: 100%; }
-
 .div--container {
-  width: 33.33333%; }
-
-.fieldset--container {
-  width: 50%; }
+  width: 33.33333%;
+  margin: 20px; }
 
 .form--box {
   display: flex;
@@ -104,41 +100,33 @@ h1 {
   justify-content: space-around; }
 
 .order--button {
-  display: inline-block;
-  width: 300px;
-  max-width: 256px;
-  height: 35px;
-  padding: 5px;
-  margin-top: 20px;
-  overflow: hidden;
-  color: #eee;
-  text-align: center;
-  text-decoration: none;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-  background-color: #666;
-  border: 1px solid #666;
-  border-radius: 4px;
-  transition: background-color 500ms ease, color 500ms ease; }
-  .order--button:hover {
-    color: #eee;
-    background-color: #333; }
+  width: 100%;
+  height: 35px; }
 
 .order--box {
-  width: 300px;
-  height: 35px;
+  width: 12em;
   margin: auto;
-  margin-bottom: 5em; }
+  margin-top: 20px;
+  margin-bottom: 80px; }
 
 .monthyear--container {
   display: flex;
-  justify-content: space-between;
   width: 100%; }
 
 .monthyear--item {
   display: flex;
   width: 100%; }
+
+@media (max-width: 600px) {
+  .div--container {
+    width: 50%; } }
+
+@media (max-width: 400px) {
+  .form--box {
+    flex-direction: column; }
+  .div--container {
+    width: calc(100% - 2.5em);
+    margin: 20px; } }
 
 @keyframes fade {
   from {
@@ -202,7 +190,7 @@ h1 {
     .index--main--container--text {
       margin-bottom: 20px; }
   .index--main--btn {
-    width: 25%; }
+    width: 8em; }
   @media (max-width: 600px) {
     .index--main--img {
       width: 100%; }
@@ -257,15 +245,16 @@ h1 {
     font-size: 1em;
     text-align: center; }
   @media (max-width: 600px) {
-    .review--container {
-      width: 50%; } }
+    .review {
+      margin: 20px; }
+      .review--container {
+        width: 50%; } }
   @media (max-width: 400px) {
     .review--container {
       width: 100%; } }
 
 .button {
   display: inline-block;
-  max-width: 16em;
   padding: 0.3125em;
   overflow: hidden;
   color: #eee;
@@ -374,16 +363,23 @@ h1 {
 .footer--below .footer--p {
   color: rgba(255, 255, 255, 0.5); }
 
+@media (max-width: 400px) {
+  .footer--item {
+    width: 50%; } }
+
 .header {
   display: flex;
   width: 100%;
   height: 50vh;
   margin-bottom: 60px;
   align-items: center;
+  font-size: 1.5em;
   text-align: center;
+  word-break: break-all;
   background: url("bg-subpage.jpg") no-repeat center;
   background-size: cover;
   opacity: 0.8; }
   .header--text {
+    padding-right: 20px;
     padding-left: 20px;
     color: #fff; }

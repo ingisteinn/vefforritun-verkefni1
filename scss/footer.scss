@@ -33,3 +33,9 @@
 .footer--below .footer--p {
   color: rgba(255, 255, 255, 0.5);
 }
+
+@media (max-width: 400px) {
+  .footer--item {
+    @include columns(6);
+  }
+}
