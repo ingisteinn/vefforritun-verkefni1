@@ -1,8 +1,5 @@
 .footer {
-  // display:flex;
   background-color: rgba(0, 0, 0, 0.8);
-  //width: 100%;
-  //justify-content: space-around;
 }
 
 .footer--upper {
@@ -13,7 +10,7 @@
   padding-bottom: $gutter;
 }
 
-.footer p {
+.footer--p {
   font-size: 1em;
   color: #fff;
 }
@@ -33,6 +30,6 @@
   border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.footer--below p {
+.footer--below .footer--p {
   color: rgba(255, 255, 255, 0.5);
 }
