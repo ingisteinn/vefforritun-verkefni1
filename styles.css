@@ -342,19 +342,19 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
     text-decoration: none; }
 
-.about--text p {
+.text--h2 {
+  font-weight: 700; }
+
+.text--p {
   margin-bottom: 20px;
   margin-top: 20px; }
 
-.about--text blockquote {
+.text--quote {
   font-size: 1.5em;
   font-style: italic;
-  float: right;
-  margin-left: .about--text blockquote gutter;
-  word-break: break-word;
-  width: 50%; }
-  .about--text blockquote p {
-    font-size: 0, 5em; }
+  float: right; }
+  .text--quote--name {
+    font-size: 0.5em; }
 
 .footer {
   background-color: rgba(0, 0, 0, 0.8); }

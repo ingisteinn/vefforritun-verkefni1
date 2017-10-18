@@ -1,20 +1,30 @@
-.about {
-
-  &--text {
-    p {
+&--main{
+  font-family: "Roboto Slab", serif;
+  
+  &--text{
+    margin-top: $gutter;
+    margin-bottom: $gutter*3;
+    width: 100%;
+    &--h2{
+      font-weight: 700;
+      color:aqua;
+    }
+    
+    &--p {
       margin-bottom: $gutter;
       margin-top: $gutter;
     }
-    blockquote {
+    
+    &--quote {
       font-size: 1.5em;
       font-style: italic;
       float: right;
-      margin-left: &gutter;
-      word-break: break-word;
-      width: 50%;
-      p {
-        font-size: 0, 5em
+      margin-bottom: $gutter*19;
+      margin-left: $gutter;
+      &--name {
+        font-size: 0.5em;
+        font-style: normal;
+        
       }
     }
   }
-}
