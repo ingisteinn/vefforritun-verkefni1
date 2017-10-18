@@ -32,6 +32,9 @@ h1 {
   /* stylelint-disable-line */
   font-family: "Roboto Slab", serif; }
 
+.gutter {
+  margin: 20px; }
+
 .row {
   display: flex;
   flex-wrap: wrap;

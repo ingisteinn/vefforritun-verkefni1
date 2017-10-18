@@ -44,6 +44,10 @@ h1 { /* stylelint-disable-line */
   font-family: "Roboto Slab", serif;
 }
 
+.gutter {
+  margin: $gutter;
+}
+
 @import "scss/grid";
 @import "scss/buy";
 @import "scss/index";
