@@ -1,30 +1,39 @@
-&--main{
-  font-family: "Roboto Slab", serif;
-  
-  &--text{
+.text{
+  margin-right: $gutter;
+  margin-left: $gutter;
+  margin-bottom: $gutter*4;
+
+  &--h2{
+    font-weight: 700;
+  }
+
+  &--p {
+    margin-bottom: $gutter;
     margin-top: $gutter;
-    margin-bottom: $gutter*3;
-    width: 100%;
-    &--h2{
-      font-weight: 700;
-      color:aqua;
-    }
-    
-    &--p {
-      margin-bottom: $gutter;
+  }
+
+  &--quote {
+    font-size: 1.5em;
+    font-style: italic;
+    float: right;
+    margin-left: $gutter*4;
+    margin-top: $gutter*2;
+    margin-bottom: $gutter*2;
+    padding: $gutter/2;
+    @include columns(6);
+
+    &--name {
+      font-size: 0.5em;
+      font-style: normal;
       margin-top: $gutter;
     }
-    
+  }
+  
+  @media (max-width: 400px) {
     &--quote {
-      font-size: 1.5em;
-      font-style: italic;
-      float: right;
-      margin-bottom: $gutter*19;
-      margin-left: $gutter;
-      &--name {
-        font-size: 0.5em;
-        font-style: normal;
-        
-      }
+      float: none;
+      margin: 0;
+      @include columns(12);
     }
   }
+}
