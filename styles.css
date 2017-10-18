@@ -67,33 +67,35 @@ h1 {
   .offset-sm-0 {
     margin-left: 0; } }
 
-label {
+.label {
   width: 100%; }
-
-input {
-  margin-bottom: 20px; }
 
 .text--field {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 20px; }
 
 .dropdown {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 20px; }
+
+.gender {
+  margin-bottom: 20px; }
 
 .buy--header {
   display: flex;
   align-items: center;
-  text-align: center;
   width: 100%;
   height: 30em;
-  background-image: url(bg-subpage.jpg);
+  margin-bottom: 40px;
+  text-align: center;
+  background-image: url("bg-subpage.jpg");
   background-attachment: fixed;
   background-size: contain;
-  margin-bottom: 40px;
-  opacity: .8; }
+  opacity: 0.8; }
 
-buy--header--content {
-  margin: auto;
+.buy--header--content {
   display: flex;
+  margin: auto;
   flex-direction: column; }
 
 .buy--header--title {
@@ -102,7 +104,7 @@ buy--header--content {
   color: white; }
 
 .buy--legend {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 1.5em; }
 
 .buy--div {
@@ -121,17 +123,17 @@ buy--header--content {
 
 .order--button {
   display: inline-block;
+  width: 300px;
   max-width: 256px;
-  padding: 5px 5px;
-  overflow: hidden;
+  height: 35px;
+  padding: 5px;
   margin-top: 20px;
+  overflow: hidden;
   color: #eee;
   text-align: center;
   text-decoration: none;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 300px;
-  height: 35px;
   cursor: pointer;
   background-color: #666;
   border: 1px solid #666;
@@ -147,20 +149,14 @@ buy--header--content {
   margin: auto;
   margin-bottom: 5em; }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin: 0; }
-
 .monthandyear {
   display: flex;
   justify-content: space-between;
   width: 100%; }
 
 .titleanddrop {
-  display: flex; }
+  display: flex;
+  width: 100%; }
 
 .dropdown2 {
   width: 50%;
@@ -366,7 +362,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: 20px;
   padding-bottom: 20px; }
 
-.footer p {
+.footer--p {
   font-size: 1em;
   color: #fff; }
 
@@ -383,7 +379,7 @@ input[type=number]::-webkit-outer-spin-button {
   justify-content: space-around;
   border-top: 1px solid rgba(255, 255, 255, 0.5); }
 
-.footer--below p {
+.footer--below .footer--p {
   color: rgba(255, 255, 255, 0.5); }
 
 .header {
