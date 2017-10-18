@@ -74,34 +74,16 @@ h1 {
   width: 100%;
   margin-bottom: 20px; }
 
-.dropdown {
+.dropdown--big {
   width: 100%;
   margin-bottom: 20px; }
 
-.gender {
+.dropdown--small {
+  width: 50%;
+  margin-left: 20px; }
+
+.radio {
   margin-bottom: 20px; }
-
-.buy--header {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 30em;
-  margin-bottom: 40px;
-  text-align: center;
-  background-image: url("bg-subpage.jpg");
-  background-attachment: fixed;
-  background-size: contain;
-  opacity: 0.8; }
-
-.buy--header--content {
-  display: flex;
-  margin: auto;
-  flex-direction: column; }
-
-.buy--header--title {
-  font-size: 3em;
-  font-weight: 700;
-  color: white; }
 
 .buy--legend {
   font-family: "Roboto Slab", serif;
@@ -149,18 +131,14 @@ h1 {
   margin: auto;
   margin-bottom: 5em; }
 
-.monthandyear {
+.monthyear--container {
   display: flex;
   justify-content: space-between;
   width: 100%; }
 
-.titleanddrop {
+.monthyear--item {
   display: flex;
   width: 100%; }
-
-.dropdown2 {
-  width: 50%;
-  margin-left: 20px; }
 
 @keyframes fade {
   from {
@@ -404,7 +382,8 @@ h1 {
   align-items: center;
   text-align: center;
   background: url("bg-subpage.jpg") no-repeat center;
-  background-size: cover; }
+  background-size: cover;
+  opacity: 0.8; }
   .header--text {
     padding-left: 20px;
     color: #fff; }

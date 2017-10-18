@@ -2,47 +2,23 @@
   width: 100%;
 }
 
-//input {
-//  margin-bottom: 20px;
-//}
-
 .text--field {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: $gutter;
 }
 
-.dropdown {
+.dropdown--big {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: $gutter;
 }
 
-.gender {
-  margin-bottom: 20px;
+.dropdown--small {
+  width: 50%;
+  margin-left: $gutter;
 }
 
-.buy--header {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 30em;
-  margin-bottom: $gutter*2;
-  text-align: center;
-  background-image: url("bg-subpage.jpg");
-  background-attachment: fixed;
-  background-size: contain;
-  opacity: 0.8;
-}
-
-.buy--header--content {
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-}
-
-.buy--header--title {
-  font-size: 3em;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
+.radio {
+  margin-bottom: $gutter;
 }
 
 .buy--legend {
@@ -74,7 +50,7 @@
   max-width: 256px;
   height: 35px;
   padding: 5px;
-  margin-top: 20px;
+  margin-top: $gutter;
   overflow: hidden;
   color: #eee;
   text-align: center;
@@ -94,24 +70,19 @@
 }
 
 .order--box {
-  width: 300px;
+  width: $gutter*15;
   height: 35px;
   margin: auto;
   margin-bottom: 5em;
 }
 
-.monthandyear {
+.monthyear--container {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.titleanddrop {
+.monthyear--item {
   display: flex;
   width: 100%;
-}
-
-.dropdown2 {
-  width: 50%;
-  margin-left: $gutter;
 }

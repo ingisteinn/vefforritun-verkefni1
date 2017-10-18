@@ -36,15 +36,15 @@
                       </label><br>
                       <p>Kyn:</p>
                       <label class="label">
-                        <input class="gender" name="gender" type="radio" value="kvk">
+                        <input class="radio" name="gender" type="radio" value="kvk">
                         Kona
                       </label><br>
                       <label class="label">
-                        <input class="gender" name="gender" type="radio" value="kk">
+                        <input class="radio" name="gender" type="radio" value="kk">
                         Karl
                       </label><br>
                       <label class="label">
-                        <input class="gender" name="gender" type="radio" value="hk">
+                        <input class="radio" name="gender" type="radio" value="hk">
                         Annað
                       </label><br>
                       <label class="label">
@@ -66,7 +66,7 @@
                       <legend class="buy--legend">Greiðsluupplýsingar</legend>
                       <label class="label">
                           Greiða með: <br>
-                          <select name="payment_method" class="dropdown">
+                          <select name="payment_method" class="dropdown--big">
                             <option value="credit">Kreditkorti</option>
                             <option value="transfer">Millifærslu</option>
                             <option value="cash">Reiðufé</option>
@@ -81,10 +81,10 @@
                         <input name="card_number" type="text" placeholder="5999-9999-9999-9999" class="text--field" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}>">
                       </label><br>
                       <p>Gildistími:</p>
-                        <div class="monthandyear">
-                          <label class="titleanddrop">
+                        <div class="monthyear--container">
+                          <label class="monthyear--item">
                             Mán 
-                            <select name="month" class="dropdown2">
+                            <select name="month" class="dropdown--small">
                               <option value="jan">01</option>
                               <option value="feb">02</option>
                               <option value="mar">03</option>
@@ -99,9 +99,9 @@
                               <option value="dec">12</option>
                             </select>
                           </label>
-                          <label class="titleanddrop">
+                          <label class="monthyear--item">
                             Ár 
-                            <select name="year" class="dropdown2">
+                            <select name="year" class="dropdown--small">
                               <option value="2017">2017</option>
                               <option value="2018">2018</option>
                               <option value="2019">2019</option>
