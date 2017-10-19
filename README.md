@@ -17,8 +17,7 @@ og þá ætti browser að opnast þar sem síðan ætti að birtast.
 
 ## Lýsing á uppsetningu verkefnisins
 
-Öll gögn eru í rót verkefnis.
-Notast var við SCSS sem finna má í möppunni scss/ í rót verkefnis. Linter var notaður til að staðla SCSS. Skráin .stylelintrc segir til um hvernig lint fyrir scss skal háttað. Hana má finna í rót verkefnisins.
+Öll gögn eru í rót verkefnis fyrir utan nokkrar scss skrár en notast var við SASS sem finna má í möppunni scss/ í rót verkefnis. Linter var notaður til að staðla SASS. Skráin .stylelintrc segir til um hvernig lint fyrir SASS skal háttað. Hana má finna í rót verkefnisins. npm run dev sér um að þýða SASS yfir í css. .gitignore skráin sem finna má í rót verkefnis segir til um þær skrár eða möppur sem ekki eiga að fara inn á github þegar maður push-ar. Upplýsingar um pakka sem notaðir voru í verkefninu er hægt að finna í package.json skránni í rót verkefnisins.
 
 ## Upplýsingar um alla þá sem unnu að verkefni
 
