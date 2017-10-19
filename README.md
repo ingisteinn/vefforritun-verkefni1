@@ -19,3 +19,9 @@ og þá ætti browser að opnast þar sem síðan ætti að birtast.
 
 Öll gögn eru í rót verkefnis.
 Notast var við SCSS sem finna má í möppunni scss/ í rót verkefnis. Linter var notaður til að staðla SCSS. Skráin .stylelintrc segir til um hvernig lint fyrir scss skal háttað. Hana má finna í rót verkefnisins.
+
+## Upplýsingar um alla þá sem unnu að verkefni
+
+* Ingi Steinn Guðmundsson - isg15@hi.is
+* Egill Friðriksson - egf4@hi.is
+* Guðmundur Guðbjarnarson - gug127@hi.is
