@@ -24,4 +24,4 @@ Notast var við SCSS sem finna má í möppunni scss/ í rót verkefnis. Linter 
 
 * Ingi Steinn Guðmundsson - isg15@hi.is
 * Egill Friðriksson - egf4@hi.is
-* Guðmundur Guðbjarnarson - gug127@hi.is
+* Guðmundur Guðbjarnason - gug127@hi.is
