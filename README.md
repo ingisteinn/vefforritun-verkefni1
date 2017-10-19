@@ -14,3 +14,8 @@ npm install
 npm run dev
 ```
 og þá ætti browser að opnast þar sem síðan ætti að birtast.
+
+## Lýsing á uppsetningu verkefnisins
+
+Öll gögn eru í rót verkefnis.
+Notast var við SCSS sem finna má í möppunni scss/ í rót verkefnis. Linter var notaður til að staðla SCSS. Skráin .stylelintrc segir til um hvernig lint fyrir scss skal háttað. Hana má finna í rót verkefnisins.
