@@ -34,7 +34,6 @@ img { /* stylelint-disable-line */
 }
 
 main { /* stylelint-disable-line */
-  //max-width: $max-width;
   // þar sem við erum að eiga við neikvæð margin á grid, setjum overflow-x
   // hér sem hidden, þá fáum við ekki lárétta skrunstiku
   overflow-x: hidden;
@@ -45,7 +44,9 @@ h1 { /* stylelint-disable-line */
 }
 
 .gutter {
+  padding-bottom: $gutter*2;
   margin: $gutter;
+  border-bottom: 1px solid #000;
 }
 
 @import "scss/grid";

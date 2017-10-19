@@ -1,70 +1,71 @@
 <!doctype html>
 <html lang="is" class="grid">
+
 <head>
-    <meta charset="utf-8">
-    <title>Verkefni 2</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Verkefni 2</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
 </head>
 
 <body>
-    <main>
-        <nav class="nav">
-            <div class="nav--index">
-                <a href="index.html" class="nav--a nav--home">Fooþjónustan</a>
-            </div>
-            <div class="nav--container">
-                <a href="about.html" class="nav--a nav--about">Um</a>
-                <a href="buy.html" class="nav--a button nav--buy">Kaupa</a>
-            </div>
-        </nav>
-        <header class="header">
-            <h1 class="header--text">Kaupa</h1>
-        </header>
-        <form class>
-            <div class="form--box">
-                <div class="div--container">
-                    <div class="buy--div">
-                      <legend class="buy--legend">Persónuupplýsingar</legend>
-                      <label class="label">
+  <main>
+    <nav class="nav">
+      <div class="nav--index">
+        <a href="index.html" class="nav--a nav--home">Fooþjónustan</a>
+      </div>
+      <div class="nav--container">
+        <a href="about.html" class="nav--a nav--about">Um</a>
+        <a href="buy.html" class="nav--a button nav--buy">Kaupa</a>
+      </div>
+    </nav>
+    <header class="header">
+      <h1 class="header--text">Kaupa</h1>
+    </header>
+    <form class>
+      <div class="form--box">
+        <div class="div--container">
+          <div class="buy--div">
+            <legend class="buy--legend">Persónuupplýsingar</legend>
+            <label class="label">
                           Nafn: <br>        
                           <input type="text" name="name" class="text--field" required>
                       </label><br>
-                      <label class="label">
+            <label class="label">
                           Kennitala: <br>
                           <input type="text" name="kennitala" class="text--field" placeholder="123456-7890" pattern="[0-9]{6}-[0-9]{4}" required>
                       </label><br>
-                      <p>Kyn:</p>
-                      <label class="label">
+            <p>Kyn:</p>
+            <label class="label">
                         <input class="radio" name="gender" type="radio" value="kvk">
                         Kona
                       </label><br>
-                      <label class="label">
+            <label class="label">
                         <input class="radio" name="gender" type="radio" value="kk">
                         Karl
                       </label><br>
-                      <label class="label">
+            <label class="label">
                         <input class="radio" name="gender" type="radio" value="hk">
                         Annað
                       </label><br>
-                      <label class="label">
+            <label class="label">
                         Sími: <br>
                         <input name="phonenumber" type="tel" class="text--field" placeholder="+354 812 3456" pattern="+354[0-9]{3} [0-9]{4}">
                       </label><br>
-                      <label class="label">
+            <label class="label">
                         Heimilisfang: <br>
                         <input name="address" type="text" class="text--field">
                       </label><br>
-                      <label class="label">
+            <label class="label">
                         <input name="postlist" type="checkbox" checked>
                         Skrá mig á póstlista
                       </label><br>
-                    </div>
-                </div>
-                <div class="div--container">
-                    <div class="buy--div">
-                      <legend class="buy--legend">Greiðsluupplýsingar</legend>
-                      <label class="label">
+          </div>
+        </div>
+        <div class="div--container">
+          <div class="buy--div">
+            <legend class="buy--legend">Greiðsluupplýsingar</legend>
+            <label class="label">
                           Greiða með: <br>
                           <select name="payment_method" class="dropdown--big">
                             <option value="credit">Kreditkorti</option>
@@ -72,17 +73,17 @@
                             <option value="cash">Reiðufé</option>
                           </select>
                       </label><br>
-                      <label class="label">
+            <label class="label">
                         Nafn á korti: <br>
                         <input name="card_name" type="text" class="text--field">
                       </label><br>
-                      <label class="label">
+            <label class="label">
                         Kortanúmer: <br>
                         <input name="card_number" type="text" placeholder="5999-9999-9999-9999" class="text--field" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}>">
                       </label><br>
-                      <p>Gildistími:</p>
-                        <div class="monthyear--container">
-                          <label class="monthyear--item">
+            <p>Gildistími:</p>
+            <div class="monthyear--container">
+              <label class="monthyear--item">
                             Mán 
                             <select name="month" class="dropdown--small">
                               <option value="jan">01</option>
@@ -99,7 +100,7 @@
                               <option value="dec">12</option>
                             </select>
                           </label>
-                          <label class="monthyear--item">
+              <label class="monthyear--item">
                             Ár 
                             <select name="year" class="dropdown--small">
                               <option value="2017">2017</option>
@@ -108,30 +109,31 @@
                               <option value="2020">2020</option>
                             </select>
                           </label>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="order--box">
-                <input type="submit" value="Panta" class="order--button button">
-            </div>
-        </form>
-    </main>
-    <footer class="footer">
-        <div class="footer--upper">
-            <div class="footer--item">
-                <p class="footer--p">Fooþjónustan</p>
-                <p class="footer--p">123-4567</p>
-            </div>
-            <div class="footer--item">
-                <p class="footer--p">Opið 12-13 alla daga</p>
-                <p class="footer--p">Bargata 1</p>
-                <p class="footer--p">900 Foobar</p>
-            </div>
+          </div>
         </div>
-        <div class="footer--below">
-            <p class="footer--p">©Fooþjónustan 2017</p>
-        </div>
-    </footer>
+      </div>
+      <div class="order--box">
+        <input type="submit" value="Panta" class="order--button button">
+      </div>
+    </form>
+  </main>
+  <footer class="footer">
+    <div class="footer--upper">
+      <div class="footer--item">
+        <p class="footer--p">Fooþjónustan</p>
+        <p class="footer--p">123-4567</p>
+      </div>
+      <div class="footer--item">
+        <p class="footer--p">Opið 12-13 alla daga</p>
+        <p class="footer--p">Bargata 1</p>
+        <p class="footer--p">900 Foobar</p>
+      </div>
+    </div>
+    <div class="footer--below">
+      <p class="footer--p">©Fooþjónustan 2017</p>
+    </div>
+  </footer>
 </body>
+
 </html>

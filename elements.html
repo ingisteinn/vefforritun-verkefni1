@@ -10,8 +10,30 @@
 </head>
 
 <body>
-  <main class="gutter">
+  <main>
     <section>
+      <nav class="nav">
+        <div class="nav--index">
+          <a href="index.html" class="nav--a nav--home">Navigation bar</a>
+        </div>
+        <div class="nav--container">
+          <a href="about.html" class="nav--a nav--about">Takki í nav-bar</a>
+          <a href="buy.html" class="nav--a button nav--buy">takki</a>
+        </div>
+      </nav>
+    </section>
+    <header class="index--header">
+      <div class="index--header--content">
+        <p class="index--header--text">Texti</p>
+        <h1 class="index--header--title">Header fyrir forsíðu</h1>
+        <a href="buy.html" class="button index--header--btn">Takki</a>
+      </div>
+    </header>
+    <h2>Header fyrir aðrar síður</h2>
+    <header class="header">
+      <h1 class="header--text">Header fyrir aðrar síður</h1>
+    </header>
+    <section class="gutter">
       <h2>Fyrirsagnir &amp; texti</h2>
 
       <h1>Stór fyrirsögn</h1>
@@ -20,12 +42,21 @@
         Texti í meginmáli sem inniheldur eitthvað, t.d. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales sed mi sed porttitor. Curabitur dolor ante, aliquet id interdum auctor, luctus ac urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin a dictum metus, non aliquam justo. Vivamus nulla nisl, ultrices eu odio non, consequat faucibus justo. Phasellus magna dui, faucibus sit amet massa ullamcorper, pellentesque bibendum lorem. Ut tincidunt lobortis sollicitudin. Suspendisse potenti. Pellentesque augue sem, accumsan eu pulvinar sed, fringilla nec nunc. Pellentesque tempor vel libero faucibus egestas. Nunc cursus nunc enim, eget tristique libero tincidunt eu. Sed eget est a ex maximus posuere. Morbi gravida cursus ipsum, mattis gravida diam iaculis id.
       </p>
     </section>
-
-    <section>
+    <section class="gutter">
+      <h2>Checklisti fyrir forsíðu</h2>
+      <div class="index--main--box">
+        <img class="index--main--check" src="check.svg">
+        <div class="index--main--container">
+          <h1>Fyrirsögn</h1>
+          <div class="index--main--container--text">Texti um eitthvað</div>
+        </div>
+      </div>
+    </section>
+    <section class="gutter">
       <h2>Takkar</h2>
       <a class="button">Venjulegur takki</a>
     </section>
-    <section>
+    <section class="gutter">
       <h2>Dropdown menu</h2>
       <h3>Dropdown stórt</h3>
       <select name="payment_method" class="dropdown--big"></select>
@@ -33,14 +64,32 @@
       <h3>Dropdown lítið</h3>
       <select name="payment_method" class="dropdown--small"></select>
     </section>
-    <section>
+    <section class="gutter">
       <h2>Radio button</h2>
       <input class="radio" name="gender" type="radio" value="kvk">
     </section>
-    <section>
-      <h2>Myndir fyrir review</h2>
-      <div class="review--img">
-        <img src="profile3.jpg" class="review--image">
+    <section class="gutter">
+      <h2>Input-Reitur fyrir form</h2>
+      <label class="label">
+                          Nafn á input: <br>
+                          <input type="text" name="kennitala" class="text--field" placeholder="123456-7890" pattern="[0-9]{6}-[0-9]{4}" required>
+                      </label>
+    </section>
+    <section class="gutter">
+      <h2>Review hlutur</h2>
+      <div class="review--container">
+        <div class="review--img">
+          <img src="profile3.jpg" class="review--image">
+        </div>
+        <div class="review--text">
+          <div class="review--quote">
+            „A+++, mun aldrei hætta í áskrift“
+          </div>
+          <div class="review--name">
+            <h2 class="review--h2">Jón Guðrúnarson</h2>
+            <p class="review--p">Áskrifandi í ár</p>
+          </div>
+        </div>
       </div>
     </section>
     <section>
@@ -52,6 +101,22 @@
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="footer--upper">
+      <div class="footer--item">
+        <p class="footer--p">Fótur síðu</p>
+        <p class="footer--p">123-4567</p>
+      </div>
+      <div class="footer--item">
+        <p class="footer--p">Upplýsingar</p>
+        <p class="footer--p">Texti</p>
+        <p class="footer--p">Text</p>
+      </div>
+    </div>
+    <div class="footer--below">
+      <p class="footer--p">©Fótur 2017</p>
+    </div>
+  </footer>
 </body>
 
 </html>
